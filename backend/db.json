@@ -47,6 +47,30 @@
       "imageUrl": "sujith",
       "like": false,
       "comment": []
+    },
+    {
+      "id": "a182",
+      "firstName": "sujith",
+      "lastName": "petluri",
+      "dateOfBirth": "2024-02-14",
+      "email": "sujith@gmail.com",
+      "password": "sujith",
+      "domain": "developer",
+      "imageUrl": "ssss",
+      "like": false,
+      "comment": []
+    },
+    {
+      "id": "60e6",
+      "firstName": "venkata",
+      "lastName": "petluri",
+      "dateOfBirth": "2024-02-15",
+      "email": "venkata@gmail.com",
+      "password": "venkata",
+      "domain": "developer",
+      "imageUrl": "venkata",
+      "like": false,
+      "comment": []
     }
   ]
 }

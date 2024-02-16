@@ -40,7 +40,6 @@ const UserContextProvider = ({ children }: UserContextProviderProps) => {
           "http://localhost:5000/users",
           payload
         );
-
         dispatch({ type: "SIGNUP", payload: data });
       } else {
         console.error("Payload is null");
@@ -76,6 +75,7 @@ const UserContextProvider = ({ children }: UserContextProviderProps) => {
     dispatch({ type: "LOGIN", payload: foundUser });
     return true;
   };
+console.log(auth,"auth====");
 
   const contextValue: ContextValueType = {
     authState: auth,
