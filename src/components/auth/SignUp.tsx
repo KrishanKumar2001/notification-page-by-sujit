@@ -13,6 +13,8 @@ type FormSubmitEvent = React.FormEvent<HTMLFormElement>;
 const Signup = () => {
   const contextValue=useContext(UserContextApi)
   const signup=contextValue?.signup
+  console.log(signup);
+  
   
   const [formData, setFormData] = useState<PayloadProps>({
     firstName: "",

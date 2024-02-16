@@ -17,6 +17,8 @@ const Login = () => {
 
   let navigate=useNavigate();
   const contextValue=useContext(UserContextApi)
+  console.log(contextValue?.authState?.payload);
+  
   const signIn=contextValue?.signIn;
 
   const x=useContext(UsersContextApi);

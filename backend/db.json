@@ -35,6 +35,18 @@
       "imageUrl": "\"jjj\"",
       "like": false,
       "comment": []
+    },
+    {
+      "id": "ed8f",
+      "firstName": "venkata",
+      "lastName": "sujith",
+      "dateOfBirth": "2024-02-16",
+      "email": "sujithkumarkavali@gmail.com",
+      "password": "sujith123",
+      "domain": "developer",
+      "imageUrl": "sujith",
+      "like": false,
+      "comment": []
     }
   ]
 }
