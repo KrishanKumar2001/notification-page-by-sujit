@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { createContext, useReducer } from "react";
-import authReducer, { AuthState } from "./../reducer/AuthReducer";
+import authReducer, { AuthState } from "../reducer/AuthReducer";
 import { PayloadProps } from "../components/types/PayloadType";
 import { UsersStateType } from "../reducer/UserReducer";
 import toast, { Toaster } from "react-hot-toast";
