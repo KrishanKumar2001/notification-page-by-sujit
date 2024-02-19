@@ -5,6 +5,7 @@ import Button from "@mui/material/Button";
 import { PayloadProps } from "../types/PayloadType";
 import { UserContextApi } from "../../context/AuthContext";
 import Carousal from "../carousal/Carousal";
+import {useNavigate} from "react-router-dom"
 
 type FormSubmitEvent = React.FormEvent<HTMLFormElement>;
 
@@ -13,7 +14,7 @@ type FormSubmitEvent = React.FormEvent<HTMLFormElement>;
 const Signup = () => {
   const contextValue=useContext(UserContextApi)
   const signup=contextValue?.signup
-  
+  const navigate=useNavigate()
   
   const [formData, setFormData] = useState<PayloadProps>({
     firstName: "",
@@ -31,6 +32,7 @@ const Signup = () => {
     event.preventDefault();
     if(signup){
       signup(formData)
+      navigate("/")
     }
     
   };
