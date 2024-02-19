@@ -1,15 +1,27 @@
 {
   "users": [
     {
-      "id":"ad01",
-      "firstName":"admin",
-      "lastName":"admin",
-      "email":"admin@gmail.com",
-      "password":"admin@123",
-      "domain":"admin",
-      "imageUrl":"url",
-      "role":"admin"
+      "id": "ad01",
+      "firstName": "admin",
+      "lastName": "admin",
+      "email": "admin@gmail.com",
+      "password": "admin@123",
+      "domain": "admin",
+      "imageUrl": "url",
+      "role": "admin"
+    },
+    {
+      "id": "3d32",
+      "firstName": "venkata sujith kumar",
+      "lastName": "petluri",
+      "dateOfBirth": "2001-10-21",
+      "email": "sujithkumarkavali@gmail.com",
+      "password": "sujith123",
+      "domain": "developer",
+      "imageUrl": "sujith",
+      "role": "user",
+      "like": false,
+      "comment": []
     }
-    
   ]
 }
