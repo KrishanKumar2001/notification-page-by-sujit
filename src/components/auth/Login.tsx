@@ -20,9 +20,9 @@ const Login = () => {
   
   const signIn=contextValue?.signIn;
 
-  const x=useContext(UsersContextApi);
-  const users=x?.userData;
-  // console.log(users,"final data======")
+  const data=useContext(UsersContextApi);
+  const users=data?.userData;
+  console.log(users,"final data======")
 
   type AuthType = {
     email: string;
