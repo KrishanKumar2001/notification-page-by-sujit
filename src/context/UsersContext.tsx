@@ -2,27 +2,23 @@ import { createContext, useEffect, useReducer } from "react";
 import userReducer, { UsersStateType } from "../reducer/UserReducer";
 import axios from "axios";
 
-type UserCreateType={
-    children:React.ReactNode;
-}
+type UserCreateType = {
+  children: React.ReactNode;
+};
 
-type UserContextValueType={
-    userData: UsersStateType;//array of user object and isLoading
-    // fetchUsers: () => Promise<void>; 
-  }
+type UserContextValueType = {
+  userData: UsersStateType; //array of user object and isLoading
+  // fetchUsers: () => Promise<void>;
+};
 
-export const UsersContextApi=createContext<UserContextValueType|null>(null);
+export const UsersContextApi = createContext<UserContextValueType | null>(null);
 
-
-
-const UsersContextProvider=({children}:UserCreateType)=>{
-
-    let initialState:UsersStateType={
-        payload:null,
-        isLoading:true
-    }
-    const [userState,dispatch]=useReducer(userReducer,initialState);
-
+const UsersContextProvider = ({ children }: UserCreateType) => {
+  let initialState: UsersStateType = {
+    payload: null,
+    isLoading: true,
+  };
+  const [userState, dispatch] = useReducer(userReducer, initialState);
 
   // fetch all users
   const fetchUsers = async () => {
@@ -32,24 +28,22 @@ const UsersContextProvider=({children}:UserCreateType)=>{
     } catch (error) {
       console.error("Error fetching users:", error);
     }
-  }
+  };
 
-   
-
- 
-
-  useEffect(()=>{
+  useEffect(() => {
     fetchUsers();
-  },[])
+  }, []);
 
-  let contextValue:UserContextValueType={
-    userData:userState,
-    // fetchUsers:fetchUsers 
-  }
-    
-    return <UsersContextApi.Provider value={contextValue}>
-                {children}
-          </UsersContextApi.Provider>
-}
+  let contextValue: UserContextValueType = {
+    userData: userState,
+    // fetchUsers:fetchUsers
+  };
+
+  return (
+    <UsersContextApi.Provider value={contextValue}>
+      {children}
+    </UsersContextApi.Provider>
+  );
+};
 
 export default UsersContextProvider;

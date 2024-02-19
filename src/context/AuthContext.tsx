@@ -17,10 +17,7 @@ type SignInType = {
 interface ContextValueType {
   authState: AuthState;
   signup: (payload: PayloadProps | null) => Promise<void>; // Return type added for consistency
-  signIn: (
-    payload: SignInType,
-    users: UsersStateType
-  ) => boolean | string;
+  signIn: (payload: SignInType, users: UsersStateType) => boolean | string;
 }
 
 export const UserContextApi = createContext<ContextValueType | null>(null);
@@ -59,7 +56,7 @@ const UserContextProvider = ({ children }: UserContextProviderProps) => {
     }
 
     const foundUser = users.find((user) => user.email === email);
-    console.log(foundUser?.role)
+    console.log(foundUser?.role);
     if (!foundUser) {
       toast.error("User with provided email does not exist");
       return false;
@@ -75,7 +72,7 @@ const UserContextProvider = ({ children }: UserContextProviderProps) => {
     dispatch({ type: "LOGIN", payload: foundUser });
     return foundUser.role;
   };
-console.log(auth,"auth====");
+  console.log(auth, "auth====");
 
   const contextValue: ContextValueType = {
     authState: auth,
