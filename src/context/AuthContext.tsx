@@ -37,6 +37,7 @@ const UserContextProvider = ({ children }: UserContextProviderProps) => {
           "http://localhost:5000/users",
           payload
         );
+        toast.success("successfully registered")
         dispatch({ type: "SIGNUP", payload: data });
       } else {
         console.error("Payload is null");
