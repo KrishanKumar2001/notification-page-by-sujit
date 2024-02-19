@@ -52,12 +52,7 @@ const Login = () => {
         }
       } 
     }
-  };
- 
-
-
-
-  // console.log(email, password);
+  };  
   return (
     <section className="main-container">
     <article className="inner-container">

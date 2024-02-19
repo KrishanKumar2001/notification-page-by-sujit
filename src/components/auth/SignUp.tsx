@@ -24,6 +24,7 @@ const Signup = () => {
     password: "",
     domain: "",
     imageUrl: "",
+    role:"user",
     like:false,
     comment:[]
   });

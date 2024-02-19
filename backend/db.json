@@ -1,88 +1,15 @@
 {
   "users": [
     {
-      "id": "0751",
-      "firstName": "Krishan",
-      "lastName": "Kumar",
-      "dateOfBirth": "2024-02-03",
-      "email": "krishanknmc00012@gmail.com",
-      "password": "12345bhb",
-      "domain": "developer",
-      "imageUrl": "\"jjj\"",
-      "like": false,
-      "comment": []
-    },
-    {
-      "id": "3bad",
-      "firstName": "ankit",
-      "lastName": "singh",
-      "dateOfBirth": "2024-02-07",
-      "email": "ankit@gmail.com",
-      "password": "12345",
-      "domain": "developer",
-      "imageUrl": "\"jjj\"",
-      "like": false,
-      "comment": []
-    },
-    {
-      "id": "a995",
-      "firstName": "ankit",
-      "lastName": "singh",
-      "dateOfBirth": "2024-02-07",
-      "email": "abhi@gmail.com",
-      "password": "abhi",
-      "domain": "developer",
-      "imageUrl": "\"jjj\"",
-      "like": false,
-      "comment": []
-    },
-    {
-      "id": "ed8f",
-      "firstName": "venkata",
-      "lastName": "sujith",
-      "dateOfBirth": "2024-02-16",
-      "email": "sujithkumarkavali@gmail.com",
-      "password": "sujith123",
-      "domain": "developer",
-      "imageUrl": "sujith",
-      "like": false,
-      "comment": []
-    },
-    {
-      "id": "a182",
-      "firstName": "sujith",
-      "lastName": "petluri",
-      "dateOfBirth": "2024-02-14",
-      "email": "sujith@gmail.com",
-      "password": "sujith",
-      "domain": "developer",
-      "imageUrl": "ssss",
-      "like": false,
-      "comment": []
-    },
-    {
-      "id": "60e6",
-      "firstName": "venkata",
-      "lastName": "petluri",
-      "dateOfBirth": "2024-02-15",
-      "email": "venkata@gmail.com",
-      "password": "venkata",
-      "domain": "developer",
-      "imageUrl": "venkata",
-      "like": false,
-      "comment": []
-    },
-    {
-      "id": "38df",
-      "firstName": "kumar",
-      "lastName": "petluri",
-      "dateOfBirth": "2024-02-01",
-      "email": "madappa@gmail.com",
-      "password": "12345",
-      "domain": "developer",
-      "imageUrl": "kumar",
-      "like": false,
-      "comment": []
+      "id":"ad01",
+      "firstName":"admin",
+      "lastName":"admin",
+      "email":"admin@gmail.com",
+      "password":"admin@123",
+      "domain":"admin",
+      "imageUrl":"url",
+      "role":"admin"
     }
+    
   ]
 }

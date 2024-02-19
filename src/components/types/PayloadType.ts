@@ -6,6 +6,7 @@ export interface PayloadProps {
     password: string;
     domain: string;
     imageUrl: string;
+    role:string;
     like:boolean;
     comment:Array<string>;
   }
