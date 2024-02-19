@@ -20,7 +20,7 @@ interface ContextValueType {
   signIn: (
     payload: SignInType,
     users: UsersStateType
-  ) => boolean | PayloadProps;
+  ) => boolean | string;
 }
 
 export const UserContextApi = createContext<ContextValueType | null>(null);
@@ -59,7 +59,7 @@ const UserContextProvider = ({ children }: UserContextProviderProps) => {
     }
 
     const foundUser = users.find((user) => user.email === email);
-
+    console.log(foundUser?.role)
     if (!foundUser) {
       toast.error("User with provided email does not exist");
       return false;
@@ -73,7 +73,7 @@ const UserContextProvider = ({ children }: UserContextProviderProps) => {
     toast.success("Successfully Logged In!");
     // Dispatch an action to update the authentication state upon successful login
     dispatch({ type: "LOGIN", payload: foundUser });
-    return true;
+    return foundUser.role;
   };
 console.log(auth,"auth====");
 

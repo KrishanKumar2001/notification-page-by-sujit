@@ -44,11 +44,15 @@ const Login = () => {
     e.preventDefault();
     if (signIn) {
       if (users) {
-        let x=signIn(authData, users);
-        console.log(x,"=========");
-        if(x){
+        let role=signIn(authData, users);
+        console.log(role,"=========");
+        if(role === "admin"){
          
           navigate("/dashboard")
+        }
+        else if(role === "user"){
+          console.log("user");
+          
         }
       } 
     }
