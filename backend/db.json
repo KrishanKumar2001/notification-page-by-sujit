@@ -35,6 +35,32 @@
       "role": "user",
       "like": false,
       "comment": []
+    },
+    {
+      "id": "d73e",
+      "firstName": "monika",
+      "lastName": "k",
+      "dateOfBirth": "2024-02-03",
+      "email": "monika@gmail.com",
+      "password": "12345",
+      "domain": "developer",
+      "imageUrl": "monika",
+      "role": "user",
+      "like": false,
+      "comment": []
+    },
+    {
+      "id": "658c",
+      "firstName": "divyanshu",
+      "lastName": "a",
+      "dateOfBirth": "2024-01-31",
+      "email": "divyanshu@gmail.com",
+      "password": "divyanshu123",
+      "domain": "developer",
+      "imageUrl": "image",
+      "role": "user",
+      "like": false,
+      "comment": []
     }
   ]
 }

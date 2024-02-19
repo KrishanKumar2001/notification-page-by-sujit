@@ -32,6 +32,7 @@ const Signup = () => {
     if (signup) {
       signup(formData);
       navigate("/");
+      window.location.reload()
     }
   };
 
